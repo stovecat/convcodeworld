@@ -443,14 +443,14 @@ if __name__ == '__main__':
     if args.model_name in AZURE_OPENAI_MODEL_LIST:
         source = 'openai'
     else:
-        source = 'vllm'
+        source = 'openai'
     if args.ref_model_name in AZURE_OPENAI_MODEL_LIST:
         ref_source = 'openai'
     else:
-        ref_source = 'vllm'
+        ref_source = 'openai'
 
-    reported_path = f"bigcodebench/sanitized_calibrated_samples/instruct/{args.model_name.replace('/', '--')}--bigcodebench-instruct--{source}-0-1-sanitized-calibrated_eval_results.json"
-    ref_reported_path = f"bigcodebench/sanitized_calibrated_samples/instruct/{args.ref_model_name.replace('/', '--')}--bigcodebench-instruct--{ref_source}-0-1-sanitized-calibrated_eval_results.json"
+    reported_path = f"bigcodebench/sanitized_calibrated_samples/instruct/{args.model_name.replace('/', '--')}--bigcodebench-instruct--{source}-0.2-1-sanitized-calibrated_eval_results.json"
+    ref_reported_path = f"bigcodebench/sanitized_calibrated_samples/instruct/{args.ref_model_name.replace('/', '--')}--bigcodebench-instruct--{ref_source}-0.2-1-sanitized-calibrated_eval_results.json"
 
     main(args.model_name,
          args.save_dir,

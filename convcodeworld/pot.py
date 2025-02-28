@@ -15,7 +15,7 @@ from user_feedback_examples import (EXPERT_FEEDBACK_EXAMPLE, NOVICE_FEEDBACK_EXA
 NO_SYNTAX_ERRORS = 'No syntax errors'
 PASSED_ALL_TEST_RUNS = 'Passed all test runs'
 NUM_UNIT_TESTS = 3
-MAX_TOKEN_LEN = 8000
+MAX_TOKEN_LEN = 16000
 
 
 def compile_code(code):
