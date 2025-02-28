@@ -16,11 +16,11 @@ conda activate vllm
 pip install vllm==0.5.5
 cd convcodeworld
 rm -rf bigcodebench
-git clone https://github.com/sfc-gh-hhan/bigcodebench.git
+git clone https://github.com/stovecat/bigcodebench.git
 cd bigcodebench
 
 # Download sanitized_calibrated_samples
-wget https://github.com/sfc-gh-hhan/convcodeworld/releases/download/v0.3.6/sanitized_calibrated_samples.tar.gz
+wget https://github.com/stovecat/convcodeworld/releases/download/v0.3.6/sanitized_calibrated_samples.tar.gz
 tar -xzvf sanitized_calibrated_samples.tar.gz
 rm sanitized_calibrated_samples.tar.gz
 
